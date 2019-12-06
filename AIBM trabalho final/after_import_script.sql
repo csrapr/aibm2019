@@ -4,10 +4,10 @@
 -- podemos usar 2 formatos de DateTime no wizard
 
 SET SQL_SAFE_UPDATES = 0;
-UPDATE urg_inform_geral
+UPDATE bd_urg.urg_inform_geral
 SET DTA_NASCIMENTO = str_to_date(DTA_NASCIMENTO, "%Y-%m-%d");
 
-ALTER TABLE urg_inform_geral MODIFY DTA_NASCIMENTO DATE;
+ALTER TABLE bd_urg.urg_inform_geral MODIFY DTA_NASCIMENTO DATE;
 
 -- confirmar se mudou direito
-SHOW FIELDS FROM urg_inform_geral;
+SHOW FIELDS FROM bd_urg.urg_inform_geral;
